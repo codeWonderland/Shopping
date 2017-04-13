@@ -81,17 +81,147 @@ CMakeFiles/PA3.dir/main.cpp.o.provides: CMakeFiles/PA3.dir/main.cpp.o.requires
 CMakeFiles/PA3.dir/main.cpp.o.provides.build: CMakeFiles/PA3.dir/main.cpp.o
 
 
+CMakeFiles/PA3.dir/ShoppingCart.cpp.o: CMakeFiles/PA3.dir/flags.make
+CMakeFiles/PA3.dir/ShoppingCart.cpp.o: ../ShoppingCart.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/aliceeaster/Desktop/Advanced Programming/PA3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PA3.dir/ShoppingCart.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PA3.dir/ShoppingCart.cpp.o -c "/Users/aliceeaster/Desktop/Advanced Programming/PA3/ShoppingCart.cpp"
+
+CMakeFiles/PA3.dir/ShoppingCart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PA3.dir/ShoppingCart.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/aliceeaster/Desktop/Advanced Programming/PA3/ShoppingCart.cpp" > CMakeFiles/PA3.dir/ShoppingCart.cpp.i
+
+CMakeFiles/PA3.dir/ShoppingCart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PA3.dir/ShoppingCart.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/aliceeaster/Desktop/Advanced Programming/PA3/ShoppingCart.cpp" -o CMakeFiles/PA3.dir/ShoppingCart.cpp.s
+
+CMakeFiles/PA3.dir/ShoppingCart.cpp.o.requires:
+
+.PHONY : CMakeFiles/PA3.dir/ShoppingCart.cpp.o.requires
+
+CMakeFiles/PA3.dir/ShoppingCart.cpp.o.provides: CMakeFiles/PA3.dir/ShoppingCart.cpp.o.requires
+	$(MAKE) -f CMakeFiles/PA3.dir/build.make CMakeFiles/PA3.dir/ShoppingCart.cpp.o.provides.build
+.PHONY : CMakeFiles/PA3.dir/ShoppingCart.cpp.o.provides
+
+CMakeFiles/PA3.dir/ShoppingCart.cpp.o.provides.build: CMakeFiles/PA3.dir/ShoppingCart.cpp.o
+
+
+CMakeFiles/PA3.dir/Beverage.cpp.o: CMakeFiles/PA3.dir/flags.make
+CMakeFiles/PA3.dir/Beverage.cpp.o: ../Beverage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/aliceeaster/Desktop/Advanced Programming/PA3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PA3.dir/Beverage.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PA3.dir/Beverage.cpp.o -c "/Users/aliceeaster/Desktop/Advanced Programming/PA3/Beverage.cpp"
+
+CMakeFiles/PA3.dir/Beverage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PA3.dir/Beverage.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/aliceeaster/Desktop/Advanced Programming/PA3/Beverage.cpp" > CMakeFiles/PA3.dir/Beverage.cpp.i
+
+CMakeFiles/PA3.dir/Beverage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PA3.dir/Beverage.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/aliceeaster/Desktop/Advanced Programming/PA3/Beverage.cpp" -o CMakeFiles/PA3.dir/Beverage.cpp.s
+
+CMakeFiles/PA3.dir/Beverage.cpp.o.requires:
+
+.PHONY : CMakeFiles/PA3.dir/Beverage.cpp.o.requires
+
+CMakeFiles/PA3.dir/Beverage.cpp.o.provides: CMakeFiles/PA3.dir/Beverage.cpp.o.requires
+	$(MAKE) -f CMakeFiles/PA3.dir/build.make CMakeFiles/PA3.dir/Beverage.cpp.o.provides.build
+.PHONY : CMakeFiles/PA3.dir/Beverage.cpp.o.provides
+
+CMakeFiles/PA3.dir/Beverage.cpp.o.provides.build: CMakeFiles/PA3.dir/Beverage.cpp.o
+
+
+CMakeFiles/PA3.dir/Food.cpp.o: CMakeFiles/PA3.dir/flags.make
+CMakeFiles/PA3.dir/Food.cpp.o: ../Food.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/aliceeaster/Desktop/Advanced Programming/PA3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PA3.dir/Food.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PA3.dir/Food.cpp.o -c "/Users/aliceeaster/Desktop/Advanced Programming/PA3/Food.cpp"
+
+CMakeFiles/PA3.dir/Food.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PA3.dir/Food.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/aliceeaster/Desktop/Advanced Programming/PA3/Food.cpp" > CMakeFiles/PA3.dir/Food.cpp.i
+
+CMakeFiles/PA3.dir/Food.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PA3.dir/Food.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/aliceeaster/Desktop/Advanced Programming/PA3/Food.cpp" -o CMakeFiles/PA3.dir/Food.cpp.s
+
+CMakeFiles/PA3.dir/Food.cpp.o.requires:
+
+.PHONY : CMakeFiles/PA3.dir/Food.cpp.o.requires
+
+CMakeFiles/PA3.dir/Food.cpp.o.provides: CMakeFiles/PA3.dir/Food.cpp.o.requires
+	$(MAKE) -f CMakeFiles/PA3.dir/build.make CMakeFiles/PA3.dir/Food.cpp.o.provides.build
+.PHONY : CMakeFiles/PA3.dir/Food.cpp.o.provides
+
+CMakeFiles/PA3.dir/Food.cpp.o.provides.build: CMakeFiles/PA3.dir/Food.cpp.o
+
+
+CMakeFiles/PA3.dir/Groceries.cpp.o: CMakeFiles/PA3.dir/flags.make
+CMakeFiles/PA3.dir/Groceries.cpp.o: ../Groceries.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/aliceeaster/Desktop/Advanced Programming/PA3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PA3.dir/Groceries.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PA3.dir/Groceries.cpp.o -c "/Users/aliceeaster/Desktop/Advanced Programming/PA3/Groceries.cpp"
+
+CMakeFiles/PA3.dir/Groceries.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PA3.dir/Groceries.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/aliceeaster/Desktop/Advanced Programming/PA3/Groceries.cpp" > CMakeFiles/PA3.dir/Groceries.cpp.i
+
+CMakeFiles/PA3.dir/Groceries.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PA3.dir/Groceries.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/aliceeaster/Desktop/Advanced Programming/PA3/Groceries.cpp" -o CMakeFiles/PA3.dir/Groceries.cpp.s
+
+CMakeFiles/PA3.dir/Groceries.cpp.o.requires:
+
+.PHONY : CMakeFiles/PA3.dir/Groceries.cpp.o.requires
+
+CMakeFiles/PA3.dir/Groceries.cpp.o.provides: CMakeFiles/PA3.dir/Groceries.cpp.o.requires
+	$(MAKE) -f CMakeFiles/PA3.dir/build.make CMakeFiles/PA3.dir/Groceries.cpp.o.provides.build
+.PHONY : CMakeFiles/PA3.dir/Groceries.cpp.o.provides
+
+CMakeFiles/PA3.dir/Groceries.cpp.o.provides.build: CMakeFiles/PA3.dir/Groceries.cpp.o
+
+
+CMakeFiles/PA3.dir/FruitJuice.cpp.o: CMakeFiles/PA3.dir/flags.make
+CMakeFiles/PA3.dir/FruitJuice.cpp.o: ../FruitJuice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/aliceeaster/Desktop/Advanced Programming/PA3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PA3.dir/FruitJuice.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PA3.dir/FruitJuice.cpp.o -c "/Users/aliceeaster/Desktop/Advanced Programming/PA3/FruitJuice.cpp"
+
+CMakeFiles/PA3.dir/FruitJuice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PA3.dir/FruitJuice.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/aliceeaster/Desktop/Advanced Programming/PA3/FruitJuice.cpp" > CMakeFiles/PA3.dir/FruitJuice.cpp.i
+
+CMakeFiles/PA3.dir/FruitJuice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PA3.dir/FruitJuice.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/aliceeaster/Desktop/Advanced Programming/PA3/FruitJuice.cpp" -o CMakeFiles/PA3.dir/FruitJuice.cpp.s
+
+CMakeFiles/PA3.dir/FruitJuice.cpp.o.requires:
+
+.PHONY : CMakeFiles/PA3.dir/FruitJuice.cpp.o.requires
+
+CMakeFiles/PA3.dir/FruitJuice.cpp.o.provides: CMakeFiles/PA3.dir/FruitJuice.cpp.o.requires
+	$(MAKE) -f CMakeFiles/PA3.dir/build.make CMakeFiles/PA3.dir/FruitJuice.cpp.o.provides.build
+.PHONY : CMakeFiles/PA3.dir/FruitJuice.cpp.o.provides
+
+CMakeFiles/PA3.dir/FruitJuice.cpp.o.provides.build: CMakeFiles/PA3.dir/FruitJuice.cpp.o
+
+
 # Object files for target PA3
 PA3_OBJECTS = \
-"CMakeFiles/PA3.dir/main.cpp.o"
+"CMakeFiles/PA3.dir/main.cpp.o" \
+"CMakeFiles/PA3.dir/ShoppingCart.cpp.o" \
+"CMakeFiles/PA3.dir/Beverage.cpp.o" \
+"CMakeFiles/PA3.dir/Food.cpp.o" \
+"CMakeFiles/PA3.dir/Groceries.cpp.o" \
+"CMakeFiles/PA3.dir/FruitJuice.cpp.o"
 
 # External object files for target PA3
 PA3_EXTERNAL_OBJECTS =
 
 PA3: CMakeFiles/PA3.dir/main.cpp.o
+PA3: CMakeFiles/PA3.dir/ShoppingCart.cpp.o
+PA3: CMakeFiles/PA3.dir/Beverage.cpp.o
+PA3: CMakeFiles/PA3.dir/Food.cpp.o
+PA3: CMakeFiles/PA3.dir/Groceries.cpp.o
+PA3: CMakeFiles/PA3.dir/FruitJuice.cpp.o
 PA3: CMakeFiles/PA3.dir/build.make
 PA3: CMakeFiles/PA3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/aliceeaster/Desktop/Advanced Programming/PA3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable PA3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/aliceeaster/Desktop/Advanced Programming/PA3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable PA3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PA3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -100,6 +230,11 @@ CMakeFiles/PA3.dir/build: PA3
 .PHONY : CMakeFiles/PA3.dir/build
 
 CMakeFiles/PA3.dir/requires: CMakeFiles/PA3.dir/main.cpp.o.requires
+CMakeFiles/PA3.dir/requires: CMakeFiles/PA3.dir/ShoppingCart.cpp.o.requires
+CMakeFiles/PA3.dir/requires: CMakeFiles/PA3.dir/Beverage.cpp.o.requires
+CMakeFiles/PA3.dir/requires: CMakeFiles/PA3.dir/Food.cpp.o.requires
+CMakeFiles/PA3.dir/requires: CMakeFiles/PA3.dir/Groceries.cpp.o.requires
+CMakeFiles/PA3.dir/requires: CMakeFiles/PA3.dir/FruitJuice.cpp.o.requires
 
 .PHONY : CMakeFiles/PA3.dir/requires
 
