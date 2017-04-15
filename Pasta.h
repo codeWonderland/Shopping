@@ -14,13 +14,13 @@ public:
 
 	Pasta(std::string shape = " ", double grams = 0, double price = 0, std::string description = " ");
 
-	std::string getShape();
+	const std::string &getShape() const;
 
-	double getGrams();
+	const double &getGrams() const;
 
-	double getPrice();
+	const double &getPrice() const;
 
-	std::string getDescription();
+	const std::string &getDescription() const;
 
 
 

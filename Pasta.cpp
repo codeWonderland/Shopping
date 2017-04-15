@@ -10,22 +10,22 @@ Pasta::Pasta(std::string shape, double grams, double price, std::string descript
 
 }
 
-std::string Pasta::getShape()
+const std::string &Pasta::getShape() const
 {
 	return mShape;
 }
 
-double Pasta::getGrams()
+const double &Pasta::getGrams() const
 {
 	return mGrams;
 }
 
-double Pasta::getPrice()
+const double &Pasta::getPrice() const
 {
 	return mPrice;
 }
 
-std::string Pasta::getDescription()
+const std::string &Pasta::getDescription() const
 {
 	return mDescription;
 }
