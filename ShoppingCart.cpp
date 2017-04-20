@@ -1,6 +1,21 @@
-//
-// Created by Alice Easter on 4/13/17.
-//
+/*
+Author: Alice Easter
+        Class: CSI 240-05
+        Assignment: PA 3
+Date Assigned: 04/11/17
+        Due Date: 04/18/17 12:29 PM
+Description:
+ 		shopping emulation
+Certification of Authenticity:
+        I certify that this is entirely my own work, except where I have given
+        fully-documented references to the work of others. I understand the definition and
+consequences of plagiarism and acknowledge that the assessor of this assignment
+        may, for the purpose of assessing this assignment:
+- Reproduce this assignment and provide a copy to another member of academic
+- staff; and/or Communicate a copy of this assignment to a plagiarism checking
+- service (which may then retain a copy of this assignment on its database for the
+- purpose of future plagiarism checking)
+*/
 
 #include "ShoppingCart.h"
 
@@ -41,10 +56,13 @@ void ShoppingCart::displayList()
 
 void ShoppingCart::addItem()
 {
+	//define all necessary variables
 	int choice, numItems = 0;
 	std::string flavor, description, shape;
 	char carbonated;
 	double grams, milliliters, price;
+
+	//show the client all options
 	std::cout << "This is what's available:" << std::endl
 			  << "1. Chips" << std::endl
 			  << "2. Fruit Juice" << std::endl
@@ -52,6 +70,8 @@ void ShoppingCart::addItem()
 			  << "4. Water" << std::endl
 			  << "Type the number of the item you would like: ";
 	std::cin >> choice;
+
+	//select item based off of what the client asked for
 	switch(choice)
 	{
 		case 1:
@@ -66,12 +86,14 @@ void ShoppingCart::addItem()
 			std::cout << "Look at the packaging, what is the mass in grams: ";
 			std::cin >> grams;
 
+			//determine the number of times to add the item to the list
 			while (numItems < 1)
 			{
 				std::cout << "How many packages would you like: ";
 				std::cin >> numItems;
 			}
 
+			//add new grocery with the specifications to the list
 			for (int i = 0; i < numItems; i++)
 			{
 				mGroceryList.push_back(new Chips(flavor, grams, price, description));
@@ -159,6 +181,7 @@ void ShoppingCart::addItem()
 			break;
 	}
 
+	//if someone didn't select an option in the qualifications then we call the function again
 	if (choice <= 0 || choice >= 5)
 	{
 		addItem();
@@ -167,6 +190,7 @@ void ShoppingCart::addItem()
 
 void ShoppingCart::removeItem(int itemIndex)
 {
+	// if the list is not empty we want to delete the data then remove the index, then we should shrink the list
 	if (mGroceryList.size() != 0)
 	{
 		delete mGroceryList[itemIndex - 1];
@@ -186,5 +210,6 @@ void ShoppingCart::emptyCart()
 
 ShoppingCart::~ShoppingCart()
 {
+	//empty the cart before destruction to remove memory leaks
 	emptyCart();
 }
