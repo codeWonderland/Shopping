@@ -45,7 +45,6 @@ void ShoppingCart::addItem()
 	std::string flavor, description, shape;
 	char carbonated;
 	double grams, milliliters, price;
-	Groceries *newItem;
 	std::cout << "This is what's available:" << std::endl
 			  << "1. Chips" << std::endl
 			  << "2. Fruit Juice" << std::endl
@@ -73,7 +72,12 @@ void ShoppingCart::addItem()
 				std::cin >> numItems;
 			}
 
-			newItem = new Chips(flavor, grams, price, description);
+			for (int i = 0; i < numItems; i++)
+			{
+				mGroceryList.push_back(new Chips(flavor, grams, price, description));
+				mCost += price;
+			}
+
 			break;
 
 		case 2:
@@ -94,7 +98,11 @@ void ShoppingCart::addItem()
 				std::cin >> numItems;
 			}
 
-			newItem = new FruitJuice(flavor, milliliters, price, description);
+			for (int i = 0; i < numItems; i++)
+			{
+				mGroceryList.push_back(new FruitJuice(flavor, milliliters, price, description));
+				mCost += price;
+			}
 			break;
 
 		case 3:
@@ -115,7 +123,11 @@ void ShoppingCart::addItem()
 				std::cin >> numItems;
 			}
 
-			newItem = new Pasta(shape, grams, price, description);
+			for (int i = 0; i < numItems; i++)
+			{
+				mGroceryList.push_back(new Pasta(shape, grams, price, description));
+				mCost += price;
+			}
 			break;
 
 		case 4:
@@ -135,7 +147,11 @@ void ShoppingCart::addItem()
 				std::cin >> numItems;
 			}
 
-			newItem = new Water((toupper(carbonated) == 'Y'), milliliters, price, description);
+			for (int i = 0; i < numItems; i++)
+			{
+				mGroceryList.push_back(new Water((toupper(carbonated) == 'Y'), milliliters, price, description));
+				mCost += price;
+			}
 			break;
 
 		default:
@@ -143,16 +159,7 @@ void ShoppingCart::addItem()
 			break;
 	}
 
-	if (choice > 0 && choice < 5)
-	{
-		for (int i = 0; i < numItems; i++)
-		{
-			mGroceryList.push_back(newItem);
-			mCost += newItem->getPrice();
-		}
-	}
-
-	else
+	if (choice <= 0 || choice >= 5)
 	{
 		addItem();
 	}
@@ -162,6 +169,7 @@ void ShoppingCart::removeItem(int itemIndex)
 {
 	if (mGroceryList.size() != 0)
 	{
+		delete mGroceryList[itemIndex - 1];
 		mGroceryList.erase(mGroceryList.begin() + itemIndex - 1);
 
 		mGroceryList.shrink_to_fit();
