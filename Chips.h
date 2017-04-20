@@ -11,14 +11,40 @@
 class Chips : public Food
 {
 public:
+
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	Chips(std::string flavor, double grams = 0, double price = 0, std::string description = " ");
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	const std::string &getFlavor() const;
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	const double &getGrams() const;
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	const double &getPrice() const;
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	const std::string &getDescription() const;
 
 private:

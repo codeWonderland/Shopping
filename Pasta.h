@@ -12,14 +12,39 @@ class Pasta : public Food
 {
 public:
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	Pasta(std::string shape = " ", double grams = 0, double price = 0, std::string description = " ");
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	const std::string &getShape() const;
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	const double &getGrams() const;
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	const double &getPrice() const;
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	const std::string &getDescription() const;
 
 

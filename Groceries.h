@@ -14,12 +14,32 @@ class Groceries
 {
 public:
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	Groceries(std::string description = " ", double price = 0.0);
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	virtual const std::string &getDescription() const = 0;
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	virtual const double &getPrice() const = 0;
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	virtual ~Groceries();
 
 protected:

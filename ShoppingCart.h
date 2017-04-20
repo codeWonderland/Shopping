@@ -17,21 +17,63 @@
 class ShoppingCart
 {
 public:
+
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	ShoppingCart();
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	int getNumItems();
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	double getTotalCost();
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	void displayList();
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	void addItem();
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	void removeItem(int itemIndex);
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	void emptyCart();
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	~ShoppingCart();
+
 private:
 	std::vector<Groceries*> mGroceryList;
 	double mCost = 0.0;

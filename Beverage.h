@@ -12,8 +12,18 @@ class Beverage : public Groceries
 {
 public:
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	Beverage(double milliliters = 0.0, double price = 0.0, std::string description = " ");
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	virtual const double &getMilliliters() const = 0;
 
 protected:

@@ -12,8 +12,18 @@ class Food : public Groceries
 {
 public:
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	Food(double grams = 0.0, double price = 0.0, std::string description = " ");
 
+	/*
+	 * Pre:
+	 * Post:
+	 * Purpose:
+	 */
 	virtual const double &getGrams() const = 0;
 
 protected:
