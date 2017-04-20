@@ -9,3 +9,7 @@ Groceries::Groceries(std::string description, double price) : mDescription(descr
 
 }
 
+Groceries::~Groceries()
+{
+
+}

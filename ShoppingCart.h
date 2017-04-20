@@ -33,7 +33,7 @@ public:
 
 	~ShoppingCart();
 private:
-	std::vector<Groceries> mGroceryList;
+	std::vector<Groceries*> mGroceryList;
 	double mCost = 0.0;
 };
 

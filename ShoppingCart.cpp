@@ -26,7 +26,7 @@ void ShoppingCart::displayList()
 	{
 		for (int i = 0; i < mGroceryList.size(); i++)
 		{
-			std::cout << i + 1 << " " << mGroceryList[i].getDescription() << " " << mGroceryList[i].getPrice()
+			std::cout << i + 1 << ". " << mGroceryList[i]->getDescription() << " $" << mGroceryList[i]->getPrice()
 					  << std::endl << std::endl;
 		}
 	}
@@ -35,6 +35,8 @@ void ShoppingCart::displayList()
 	{
 		std::cout << "Welcome to DayMart! Your cart is empty! Let's change that!" << std::endl;
 	}
+
+	std::cout << std::endl;
 }
 
 void ShoppingCart::addItem()
@@ -55,9 +57,11 @@ void ShoppingCart::addItem()
 	{
 		case 1:
 			std::cout << "What kind of chips would you like: ";
-			std::cin >> description;
+			std::cin.ignore();
+			std::getline(std::cin, description);
 			std::cout << "What flavor did you say those were: ";
-			std::cin >> flavor;
+			std::cin.ignore();
+			std::getline(std::cin, flavor);
 			std::cout << "How much do those run: $";
 			std::cin >> price;
 			std::cout << "Look at the packaging, what is the mass in grams: ";
@@ -74,9 +78,11 @@ void ShoppingCart::addItem()
 
 		case 2:
 			std::cout << "What kind of fruit juice would you like: ";
-			std::cin >> description;
+			std::cin.ignore();
+			std::getline(std::cin, description);
 			std::cout << "What flavor did you say that is: ";
-			std::cin >> flavor;
+			std::cin.ignore();
+			std::getline(std::cin, flavor);
 			std::cout << "How much does that run: $";
 			std::cin >> price;
 			std::cout << "Look at the packaging, what is the volume in milliliters: ";
@@ -93,9 +99,11 @@ void ShoppingCart::addItem()
 
 		case 3:
 			std::cout << "What kind of pasta would you like: ";
-			std::cin >> description;
+			std::cin.ignore();
+			std::getline(std::cin, description);
 			std::cout << "What shape is that: ";
-			std::cin >> shape;
+			std::cin.ignore();
+			std::getline(std::cin, shape);
 			std::cout << "How much does that run: $";
 			std::cin >> price;
 			std::cout << "Look at the packaging, what is the mass in grams: ";
@@ -112,7 +120,8 @@ void ShoppingCart::addItem()
 
 		case 4:
 			std::cout << "What kind of would would you like: ";
-			std::cin >> description;
+			std::cin.ignore();
+			std::getline(std::cin, description);
 			std::cout << "Is that carbonated (Y/n): ";
 			std::cin >> carbonated;
 			std::cout << "How much does that run: $";
@@ -138,7 +147,7 @@ void ShoppingCart::addItem()
 	{
 		for (int i = 0; i < numItems; i++)
 		{
-			mGroceryList.emplace_back(newItem);
+			mGroceryList.push_back(newItem);
 			mCost += newItem->getPrice();
 		}
 	}
@@ -151,9 +160,12 @@ void ShoppingCart::addItem()
 
 void ShoppingCart::removeItem(int itemIndex)
 {
-	mGroceryList.erase(mGroceryList.begin() + itemIndex - 1);
+	if (mGroceryList.size() != 0)
+	{
+		mGroceryList.erase(mGroceryList.begin() + itemIndex - 1);
 
-	mGroceryList.shrink_to_fit();
+		mGroceryList.shrink_to_fit();
+	}
 }
 
 void ShoppingCart::emptyCart()

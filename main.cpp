@@ -27,16 +27,18 @@ int main()
 				myCart->addItem();
 				break;
 			case 2:
-				myCart->displayList();
-				std::cout << "Input the number of the item to remove: ";
-				std::cin >> choice;
-				myCart->removeItem(choice);
+				if (myCart->getNumItems() != 0)
+				{
+					myCart->displayList();
+					std::cout << "Input the number of the item to remove: ";
+					std::cin >> choice;
+					myCart->removeItem(choice);
+				}
 				break;
 			case 3:
-				myCart->displayList();
 				break;
 			case 4:
-				std::cout << "Your total bill is currently $" << myCart->getTotalCost();
+				std::cout << "Your total bill is currently $" << myCart->getTotalCost() << std::endl;
 				break;
 			case 5:
 				myCart->emptyCart();
