@@ -4,8 +4,8 @@
 
 #include "FruitJuice.h"
 
-FruitJuice::FruitJuice(std::string flavor = " ", double milliliters = 0.0, double price = 0.0,
-					   std::string description = " ") : Beverage(milliliters, price, description), mFlavor(flavor)
+FruitJuice::FruitJuice(std::string flavor, double milliliters, double price, std::string description) :
+		Beverage(milliliters, price, description), mFlavor(flavor)
 {
 
 }

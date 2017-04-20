@@ -14,7 +14,7 @@ public:
 
 	Food(double grams = 0.0, double price = 0.0, std::string description = " ");
 
-	virtual double getGrams() = 0;
+	virtual const double &getGrams() const = 0;
 
 protected:
 	double mGrams;

@@ -14,7 +14,7 @@ public:
 
 	Beverage(double milliliters = 0.0, double price = 0.0, std::string description = " ");
 
-	virtual double getMilliliters() = 0;
+	virtual const double &getMilliliters() const = 0;
 
 protected:
 	double mMilliliters;

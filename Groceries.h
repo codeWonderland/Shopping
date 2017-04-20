@@ -16,9 +16,9 @@ public:
 
 	Groceries(std::string description = " ", double price = 0.0);
 
-	virtual std::string getDescription = 0;
+	virtual const std::string &getDescription() const = 0;
 
-	virtual double getPrice = 0;
+	virtual const double &getPrice() const = 0;
 
 	virtual ~Groceries();
 
